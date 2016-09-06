@@ -1,0 +1,310 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@import "mixin";
+
+#header-site{
+    background-color: #333333;
+    min-height: 200px;
+
+    span{
+        color: #FF0801;
+        text-decoration: none; 
+    }
+
+    h1{
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: inherit; 
+        text-align: center;
+    }
+
+    p{
+        color: white;
+        font-size: 30px;
+    }
+
+    a:hover{
+        color: red;
+    }
+
+    .button-principal {
+        @include button;
+        background:transparent;
+        color: white;
+        margin: 6px 8px;
+    }  
+
+    .button-secondary {
+        @include button;
+        background:red;
+        color: white;
+    } 
+    .navbar-default {
+        background-color: #333333;
+        border-color: #e7e7e7;
+        margin-top: 30px;
+
+        li{
+            font-weight: bold;
+        }
+    }    
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #e7e7e7;
+        float: right; 
+        margin: 1px 8px;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-header {
+            float: left;
+            margin: 2px 171px;
+        }
+    }
+
+    .textchange{
+        font-weight: 900;
+        color: white;
+    }
+
+}
+
+//*********************************************************************************************************************************************************************
+
+#header-mapa{
+    min-height: 200px;
+
+    .map{
+        width: 100%;
+    }
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+#menu-secundary{
+    min-height: 60px;
+
+
+    li{
+        font-family:'NotoRegular';
+        font-size: 24px;  
+        display: inline;
+        text-decoration: none;
+        margin-right: 11px;
+    }
+
+    ul{
+        margin-top: 12px;
+        margin: 12px 14px;
+    }
+    a{
+        color: #B3B3B3;
+        text-decoration: none;
+    }
+
+    a:hover{
+        border-bottom: solid 3px red;
+        color: black;
+    }
+
+    .campostexto1{
+        @include campos;
+        min-width: 279px;  
+    }
+    .campostexto1::-webkit-input-placeholder {
+        color:    black;
+        font-weight: bold;
+    }
+
+    .campostexto2{
+        @include campos;
+        min-width: 260px;  
+    }
+
+
+
+    .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        border-bottom: solid 5px red;
+    }
+
+    .ubicacion {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+    }
+
+    .image-second-menu{
+        position: absolute;
+        top: 12px;
+        left:-6px;
+    }
+
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#content{
+
+    min-height: 400px; 
+    background: #F4F4F4;
+
+
+    .content-left{
+        background: red;
+        min-height: 200px;
+        width: 300px;
+        margin-top: 47px;
+        margin-right: 37px;
+        margin-bottom: 42px;
+
+        h1{
+            font-size: 23px;
+            color: black;
+            font-weight: bold;
+            font-family: 'NotoRegular';
+        }
+        h2{
+            font-size: 15px;
+            margin: 10px 1px;
+            color: black;
+        }
+        h3{
+            font-size: 11px;
+            color: darkred;
+            margin: 3px 3px;
+        }          
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 23px -15px;
+        }  
+        p{
+            color: black;
+        }
+
+        .ico-face{
+            position: absolute;
+            top: 173px;
+            left: 11px;
+        }
+
+        .ico-corazon{
+            position: absolute;
+            top: 173px;
+            left: 259px;
+        }
+        .text-encima{
+            position: absolute;
+            color: black;
+            font-size: 12px;
+            font-family: arial;
+            top: 180px;
+            left: 53px;
+        }
+
+        .imagecontent{
+            margin: 0px -15px;
+        }
+
+        .numcontent{
+            font-size: 30px;
+            color: black;
+            float: right;
+            position: absolute;
+            top: 512px;
+            left: 73px;
+        }
+        .porcentaje{
+            font-size: 19px;
+        }
+        .male{
+            text-transform: uppercase;
+            font-size: 12px;
+            top: 545px;
+            position: absolute;
+            left: 79px;
+        }
+    }
+    .content-center{
+        background: #66afe9;
+        min-height: 400px;
+        width: 380px;
+        float: right;
+    }
+
+    .content-right{
+        background: green;
+        min-height: 400px;
+        width: 380px;
+        float: right;
+    }
+}
+//+***************************************************************************************************************************************************************
+
+
+
+#footer{
+    background: #333333;
+    min-height: 60px;
+
+    .navbar-default {
+        background-color:#333333;
+        border: none;
+        top: 16px;
+        margin-bottom: 26px;
+    }
+    a{
+        color: white;
+    }
+
+    a:hover{
+        color: red;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-nav {
+            float: left;
+            margin: 8px 139px;
+        }
+    }
+
+    p {
+        margin: 0 0 42px;
+        color: white;
+        font-weight: 100;
+        color: #C0C0B8;
+    }
+
+    .textchangefooter{
+        font-weight: 900;
+        color: white;
+    }
+
+    ul{
+        margin-top: 0;
+        margin-bottom: 10px;
+        float: right;
+        margin: 0px 12px;
+    }
+
+    li{
+        display: inline;
+    }
+
+    .line {
+        border-bottom: 2px #555555 groove;
+        margin-bottom: 31px;
+    }
+
+}

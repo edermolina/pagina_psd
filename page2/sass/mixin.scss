@@ -1,0 +1,16 @@
+
+
+ @mixin button {
+        border-radius: 5px;
+        height: 39px;
+        width: 128px;
+    }
+    
+@mixin campos{
+        height: 20px;
+        min-height: 38px;
+        margin-top: 10px;
+        border-color: black;
+        margin: 9px 8px;
+        border-radius: 5px;
+    }
